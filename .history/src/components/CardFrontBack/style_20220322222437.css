@@ -1,0 +1,4 @@
+.card-front-back {
+  position: relative;
+  transform-style: preserve-3d; 
+}
