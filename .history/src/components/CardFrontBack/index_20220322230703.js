@@ -5,9 +5,8 @@ function CardFrontBack() {
   window.cardFrontBack = {};
   window.cardFrontBack.handleClick = (event) => {
     const $origin = event.target;
-    const $cardFrontBack = $origin.closest(".card-front-back");
-
-    $cardFrontBack.classList.toggle("-active");
+    const $cardFrontBack = $origin.parentNode.parentNode.parentNode;
+    console.log($cardFrontBack);
   };
 
   return /*html*/ `
